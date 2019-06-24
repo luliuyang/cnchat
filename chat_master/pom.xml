@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>chat</groupId>
+    <artifactId>cn.chat</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <dependencies>
+    <dependency>
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+        <version>4.11</version>
+        <scope>test</scope>
+    </dependency>
+    <!--补全项目依赖-->
+
+    <!--1)日志
+    是规范/接口：slf4j
+    日志实现:log4j,logback,common-logging
+    本项目使用：slf4j+logback-->
+    <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-api</artifactId>
+        <version>1.7.12</version>
+    </dependency>
+    <!--实现slf4j接口并整合 -->
+    <dependency>
+        <groupId>ch.qos.logback</groupId>
+        <artifactId>logback-classic</artifactId>
+        <version>1.1.1</version>
+    </dependency>
+    </dependencies>
+
+
+
+</project>
